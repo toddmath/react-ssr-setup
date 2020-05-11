@@ -1,13 +1,13 @@
-import * as express from 'express';
-import { configureStore } from '../../shared/store';
+import * as express from 'express'
+import { configureStore } from '../../shared/store'
 
 const addStore = (
-    _req: express.Request,
-    res: express.Response,
-    next: express.NextFunction
+  _req: express.Request,
+  res: express.Response,
+  next: express.NextFunction
 ): void => {
-    res.locals.store = configureStore({});
-    next();
-};
+  res.locals.store = configureStore({})
+  next()
+}
 
-export default addStore;
+export default addStore
